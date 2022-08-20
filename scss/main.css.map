@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_reset.scss",
+        "_variables.scss",
+        "_layout.scss",
+        "_typography.scss",
+        "_components.scss",
+        "_media-queries.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
