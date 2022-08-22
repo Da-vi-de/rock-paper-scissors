@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -15,6 +15,71 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
 <body>
-  <h1>Hello</h1>
+
+<header  class="container">
+  <div class="hero">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="game logo">
+    </div>
+
+      <div class="score">
+        <p class="score-text">score</p>
+        <h1 class="score-track-text">0</h1>
+      </div>
+    </div>
+</header>
+
+<main class="container">
+
+  <div class="triangle-bg-container">
+
+    <div class="triangle-bg">
+
+      <div class=" images-position">
+
+          <div class="paper-img">
+              <img class="img" src="./images/icon-paper.svg" alt="paper">
+          </div>
+
+          <div class="scissors-img">
+              <img class="img" src="./images/icon-scissors.svg" alt="scissors">
+          </div>
+        </div>
+
+          <div   class="rock-img">
+              <img class="img" src="./images/icon-rock.svg" alt="rock">
+          </div>
+        </div>
+     </div>
+  </main>
+
+  <div>
+    <h2>you picked</h2>
+    <div>
+      <img class="img" alt="user choice">
+    </div>
+  </div>
+
+
+  <div>
+    <h2>you win</h2>
+  </div>
+  <button>play again</button>
+
+  <div>
+    <h2>the house picked</h2>
+    <div>
+      <img  class="img" alt="pc choice">
+    </div>
+  </div>
+
+  <footer>
+    <button>rules</button>
+      <div>
+        <h2 class="rules-text">rules</h2>
+        <img src="./images/image-rules.svg" alt="game rules">
+        <img src="./images/icon-close.svg" alt="close icon">
+      </div>
+  </footer>
 </body>
 </html>

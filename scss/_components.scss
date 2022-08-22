@@ -1,0 +1,45 @@
+.logo {
+    width: 5rem;
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+.score {
+    width: 5rem;
+    height: 4.5rem;
+    background-color: $color-white;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.img {
+    background-color: $color-white;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.paper-img,
+.scissors-img,
+.rock-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.paper-img {
+    grid-column: 1;
+    grid-row: 1;
+    transform: translate(-30%, -50%);
+}
+
+.scissors-img {
+    grid-column: 2;
+    grid-row: 1;
+    transform: translate(140%, -50%);
+}
+
+.rock-img {
+    grid-row: 2;
+    margin-left: 5rem;
+    transform: translate(-10%, 80%);
+}
