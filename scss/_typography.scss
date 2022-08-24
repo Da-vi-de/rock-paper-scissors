@@ -1,0 +1,22 @@
+.score-text {
+    font-size: $font-size-0_6;
+    color: $color-score-text;
+    text-transform: uppercase;
+    padding-top: .3rem;
+    font-weight: 700;
+}
+
+.score-track-text {
+    font-size: $font-size-2_5;
+    font-weight: 700;
+    color: $color-dark-text;
+}
+
+.rules-text {
+    margin-top: 6rem;
+    font-size: $font-size-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-dark-text;
+}

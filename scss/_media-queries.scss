@@ -1,0 +1,128 @@
+@media all and (min-width: 48rem) {
+
+    /*================
+         #Layout
+      ================
+    */
+
+    .container {
+        max-width: min(75%);
+    }
+
+    .triangle-bg {
+        width: 24rem;
+        height: 22rem;
+    }
+
+    .user-pick,
+    .computer-pick {
+        margin-top: 8rem;
+    }
+
+
+    /*================
+         #Components
+      ================
+    */
+
+    .paper-img,
+    .scissors-img,
+    .rock-img {
+        width: 4rem;
+        height: 6rem;
+    }
+
+    .paper-img {
+        transform: translate(-30%, -40%);
+    }
+
+    .scissors-img {
+        transform: translate(210%, -40%);
+    }
+
+    .rock-img {
+        transform: translate(130%, 110%);
+    }
+
+    .pc-picked-img {
+        transform: translate(220%, -30%);
+    }
+
+    .btn-rules-position {
+        justify-content: end;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+
+    .rules-img {
+        margin-left: 15rem;
+        margin-top: 7rem;
+     }
+
+     .close-rules {
+         margin-left: 24rem;
+     }
+}
+
+@media all and (min-width: 75rem) {
+
+    /*================
+         #Layout
+      ================
+    */
+
+    .container {
+        max-width: min(55%);
+    }
+
+    /*================
+         #Components
+      ================
+     */
+
+    .logo {
+        width: 8rem;
+        height: 6rem;
+        padding-top: 1rem;
+    }
+
+    .score-desktop-position {
+        margin-top: .3rem;
+    }
+
+    .score {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .rules {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        width: 27rem;
+        height: 26rem;
+        border-radius: 4px;
+    }
+
+    .rules-img {
+        width: fit-content;
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+     }
+
+     .close-rules {
+        margin-top: -21.7rem;
+     }
+
+     /*================
+         #Typography
+      ================
+    */
+
+    .rules-text {
+        font-size: $font-size-1_5;
+        margin-top: 1rem;
+        margin-left: 1.7rem;
+        text-align: left;
+    }
+}

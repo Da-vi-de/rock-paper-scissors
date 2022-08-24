@@ -131,6 +131,29 @@ select {
       grid-template-rows: repeat(2, 1fr);
 }
 
+.score-text {
+  font-size: 0.6rem;
+  color: #2a46c0;
+  text-transform: uppercase;
+  padding-top: .3rem;
+  font-weight: 700;
+}
+
+.score-track-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b4363;
+}
+
+.rules-text {
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3b4363;
+}
+
 .logo {
   width: 5rem;
   height: 3rem;
@@ -183,5 +206,223 @@ select {
   margin-left: 5rem;
   -webkit-transform: translate(-10%, 80%);
           transform: translate(-10%, 80%);
+}
+
+.btn-rules-position {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rules {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.rules-img {
+  max-width: 80%;
+  margin-left: 1.8rem;
+  margin-top: 7rem;
+}
+
+.close-rules {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-left: 10rem;
+  margin-top: 7rem;
+}
+
+.btn-rules {
+  padding: .3rem 2.5rem;
+  border: 2px solid #606e85;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+.btn-rules:hover {
+  background-color: white;
+  color: #3b4363;
+}
+
+/*
+
+.circle-paper,
+.circle-scissors,
+.circle-rock {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background-color: $color-white;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: inset 0 4px 1px #b4afaf;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: -17%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    border: 53px solid;
+   }
+  }
+
+.circle-paper {
+    color: $color-paper;
+
+    &::before {
+        box-shadow:  0 5px 1px hsl(230, 89%, 62%);;
+    }
+}
+
+.circle-scissors {
+    color: $color-scissors;
+
+    &::before {
+        box-shadow:  0 5px 1px hsl(39, 89%, 49%) ;
+    }
+}
+
+.circle-rock {
+    color: $color-rock;
+
+    &::before {
+        box-shadow:  0 5px 1px hsl(349, 71%, 52%);
+    }
+}
+*/
+@media all and (min-width: 48rem) {
+  /*================
+         #Layout
+      ================
+    */
+  .container {
+    max-width: 75%;
+  }
+  .triangle-bg {
+    width: 24rem;
+    height: 22rem;
+  }
+  .user-pick,
+  .computer-pick {
+    margin-top: 8rem;
+  }
+  /*================
+         #Components
+      ================
+    */
+  .paper-img,
+  .scissors-img,
+  .rock-img {
+    width: 4rem;
+    height: 6rem;
+  }
+  .paper-img {
+    -webkit-transform: translate(-30%, -40%);
+            transform: translate(-30%, -40%);
+  }
+  .scissors-img {
+    -webkit-transform: translate(210%, -40%);
+            transform: translate(210%, -40%);
+  }
+  .rock-img {
+    -webkit-transform: translate(130%, 110%);
+            transform: translate(130%, 110%);
+  }
+  .pc-picked-img {
+    -webkit-transform: translate(220%, -30%);
+            transform: translate(220%, -30%);
+  }
+  .btn-rules-position {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .rules-img {
+    margin-left: 15rem;
+    margin-top: 7rem;
+  }
+  .close-rules {
+    margin-left: 24rem;
+  }
+}
+
+@media all and (min-width: 75rem) {
+  /*================
+         #Layout
+      ================
+    */
+  .container {
+    max-width: 55%;
+  }
+  /*================
+         #Components
+      ================
+     */
+  .logo {
+    width: 8rem;
+    height: 6rem;
+    padding-top: 1rem;
+  }
+  .score-desktop-position {
+    margin-top: .3rem;
+  }
+  .score {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .rules {
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    width: 27rem;
+    height: 26rem;
+    border-radius: 4px;
+  }
+  .rules-img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+  }
+  .close-rules {
+    margin-top: -21.7rem;
+  }
+  /*================
+         #Typography
+      ================
+    */
+  .rules-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.7rem;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */
