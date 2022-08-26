@@ -62,6 +62,19 @@
      .close-rules {
          margin-left: 24rem;
      }
+
+     .user-pick {
+        grid-column: 1/1;
+     }
+
+    /*================
+         #Typography
+      ================
+    */
+
+     .my-pick-text {
+        transform: translate(-30%);
+     }
 }
 
 @media all and (min-width: 75rem) {
@@ -124,5 +137,17 @@
         margin-top: 1rem;
         margin-left: 1.7rem;
         text-align: left;
+    }
+}
+
+@media all and (min-width: 93.75rem) {
+
+    /*================
+         #Typography
+      ================
+    */
+
+    .my-pick-text {
+        font-size: $font-size-1_5;
     }
 }

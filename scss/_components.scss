@@ -93,6 +93,15 @@
     }
 }
 
+.user-pick {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.picked-img {
+    transform: translate(10%, -70%);
+}
+
 
 /*
 
