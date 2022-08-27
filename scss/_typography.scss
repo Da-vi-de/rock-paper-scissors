@@ -21,7 +21,8 @@
     color: $color-dark-text;
 }
 
-.my-pick-text {
+.my-pick-text,
+.computer-pick-text {
     margin-top: 4rem;
     transform: translate(28%);
     font-size: $font-size-0_8;

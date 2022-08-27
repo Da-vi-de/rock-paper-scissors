@@ -27,5 +27,22 @@ function getUserChoice(choice) {
     gameContainer.style.display = "none";
     choices.style.display = "grid";
     document.getElementById('userChoiceImg').src = choiceOption[choice];
+    getComputerChoice(choice);
+}
+;
+function getComputerChoice() {
+    let options = ["rock", "paper", "scissors"];
+    const computerChoice = options[Math.floor(Math.random() * options.length)];
+    const markup = `
+ <div class="computer-pick">
+    <h2 class="computer-pick-text">the house picked</h2>
+    <div>
+      <div class="pc-picked-img paper-img">
+        <img class="img" src = ${choiceOption[computerChoice]} alt="computer choice">
+      </div>
+    </div>
+  </div>
+  `;
+    choices.insertAdjacentHTML('beforeend', markup);
 }
 ;

@@ -67,6 +67,11 @@
         grid-column: 1/1;
      }
 
+     .computer-pick {
+        grid-column: 3/3;
+        transform: translate(-50%);
+     }
+
     /*================
          #Typography
       ================
@@ -75,6 +80,11 @@
      .my-pick-text {
         transform: translate(-30%);
      }
+
+     .computer-pick-text {
+        transform: translate(100%);
+    }
+
 }
 
 @media all and (min-width: 75rem) {
@@ -127,6 +137,10 @@
         margin-top: -21.7rem;
      }
 
+     .computer-pick {
+        transform: translate(-40%);
+    }
+
      /*================
          #Typography
       ================
@@ -142,12 +156,26 @@
 
 @media all and (min-width: 93.75rem) {
 
+     /*================
+         #Components
+       ================
+     */
+    .computer-pick {
+        transform: translate(-30%);
+     }
+
     /*================
          #Typography
       ================
     */
 
-    .my-pick-text {
+    .my-pick-text,
+    .computer-pick-text {
         font-size: $font-size-1_5;
     }
+
+    .computer-pick-text {
+        transform: translate(50%);
+    }
+
 }

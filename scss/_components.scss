@@ -98,9 +98,19 @@
     grid-row: 1;
 }
 
+.computer-pick {
+    grid-column: 2/-1;
+    grid-row: 1;
+}
+
 .picked-img {
     transform: translate(10%, -70%);
 }
+
+.pc-picked-img {
+    transform: translate(90%, -70%);
+}
+
 
 
 /*

@@ -35,10 +35,30 @@ function hideResponse(): void {
 hideResponse();
 
 // The function si called by the onClick event in HTML file!
+// The computer choice function is called here so that the game works as expected!
 function getUserChoice(choice:string) {
 
   gameContainer.style.display = "none";
   choices.style.display = "grid";
 
  (document.getElementById('userChoiceImg') as HTMLImageElement).src = choiceOption[choice];
+ getComputerChoice(choice);
+};
+
+
+function getComputerChoice() {
+  let options: string[] = ["rock", "paper", "scissors"];
+  const computerChoice: string = options[Math.floor(Math.random() * options.length)];
+
+ const markup: string = `
+ <div class="computer-pick">
+    <h2 class="computer-pick-text">the house picked</h2>
+    <div>
+      <div class="pc-picked-img paper-img">
+        <img class="img" src = ${choiceOption[computerChoice]} alt="computer choice">
+      </div>
+    </div>
+  </div>
+  `;
+   choices.insertAdjacentHTML('beforeend', markup);
 };
