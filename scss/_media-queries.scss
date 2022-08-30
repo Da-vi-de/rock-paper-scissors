@@ -72,6 +72,12 @@
         transform: translate(-50%);
      }
 
+     .game-response {
+        grid-column: 2/2;
+        grid-row: 1;
+        transform: translate(35%, -25%);
+     }
+
     /*================
          #Typography
       ================

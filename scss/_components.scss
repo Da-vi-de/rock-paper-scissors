@@ -111,7 +111,28 @@
     transform: translate(90%, -70%);
 }
 
+.game-response {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    align-self: center;
+}
 
+.play-again-btn {
+    width: 13rem;
+    height: 3rem;
+    background-color: $color-white;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $color-dark-text;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transform: translate(-24%);
+
+    &:hover {
+        color: $color-rock;
+    }
+}
 
 /*
 

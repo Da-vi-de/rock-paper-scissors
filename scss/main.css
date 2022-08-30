@@ -189,6 +189,15 @@ select {
           order: 2;
 }
 
+.response-text {
+  margin-top: 3.8rem;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transform: translate(-2%);
+          transform: translate(-2%);
+}
+
 .logo {
   width: 5rem;
   height: 3rem;
@@ -320,6 +329,35 @@ select {
           transform: translate(90%, -70%);
 }
 
+.game-response {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 3;
+      grid-column-end: span 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.play-again-btn {
+  width: 13rem;
+  height: 3rem;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #3b4363;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  -webkit-transform: translate(-24%);
+          transform: translate(-24%);
+}
+
+.play-again-btn:hover {
+  color: #dd405d;
+}
+
 /*
 
 .circle-paper,
@@ -438,6 +476,14 @@ select {
     grid-column: 3/3;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
+  }
+  .game-response {
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -webkit-transform: translate(35%, -25%);
+            transform: translate(35%, -25%);
   }
   /*================
          #Typography

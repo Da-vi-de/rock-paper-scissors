@@ -4,6 +4,8 @@ const closeRules = document.querySelector('.close-rules') as  HTMLImageElement;
 
 let gameContainer = document.querySelector('.triangle-bg-container') as HTMLDivElement;
 let choices = document.querySelector('.choices') as  HTMLDivElement;
+let scoreText = document.querySelector (".score h1") as HTMLDivElement;
+let score: number = 0;
 
 // The Rules modal
 buttonRules.onclick = function() {
@@ -45,8 +47,9 @@ function getUserChoice(choice:string) {
  getComputerChoice(choice);
 };
 
-
-function getComputerChoice() {
+// The result function is called here in order to include the functionality,
+// so that the game makes sense!
+function getComputerChoice(choice:string) {
   let options: string[] = ["rock", "paper", "scissors"];
   const computerChoice: string = options[Math.floor(Math.random() * options.length)];
 
@@ -61,4 +64,66 @@ function getComputerChoice() {
   </div>
   `;
    choices.insertAdjacentHTML('beforeend', markup);
+   getResult(choice, computerChoice);
+};
+
+// Some logic to determine the outcome!
+function getResult(userChoice: string, computerChoice:string) {
+
+  if (userChoice === "paper" && computerChoice === "scissors") {
+    setDecision("you lose!");
+  };
+
+  if (userChoice === "paper" && computerChoice === "rock") {
+    setDecision("you win!");
+    setScore( score  + 1);
+  };
+
+  if (userChoice === "paper" && computerChoice === "paper") {
+    setDecision("It's a tie!");
+  };
+
+  if (userChoice === "scissors" && computerChoice === "rock") {
+    setDecision("you lose!");
+  };
+
+  if (userChoice === "scissors" && computerChoice === "paper") {
+    setDecision("you win!");
+    setScore(score  + 1);
+  };
+
+  if (userChoice === "scissors" && computerChoice === "scissors") {
+    setDecision("It's a tie!");
+  };
+
+  if (userChoice === "rock" && computerChoice === "paper") {
+    setDecision("you lose!");
+  };
+
+  if (userChoice === "rock" && computerChoice === "scissors") {
+    setDecision("you win!");
+    setScore( score  + 1);
+  };
+
+  if (userChoice === "rock" && computerChoice === "rock") {
+    setDecision("It's a tie!");
+  };
+};
+
+// Render the text based on the outcome!
+function setDecision(decision:string) {
+  (document.querySelector(".response h2") as HTMLDivElement).innerText = decision;
+};
+
+// Keep track of the score and render it!
+function setScore(newScore: number) {
+  score = newScore;
+  scoreText.innerText = newScore.toString();
+};
+
+// This function is called by the onClick event in HTML file
+// in order to play again!
+function restartGame() {
+  choices.style.display = "none";
+  gameContainer.style.display = "grid";
 };
