@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -15,6 +15,83 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
 <body>
-  <h1>Hello</h1>
+
+<header  class="container">
+  <div class="hero">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="game logo">
+    </div>
+
+      <div class="score">
+        <p class="score-text">score</p>
+        <h1 class="score-track-text">0</h1>
+      </div>
+    </div>
+</header>
+
+<main class="container">
+
+  <div class="triangle-bg-container">
+
+    <div class="triangle-bg">
+
+      <div class=" images-position">
+
+          <div class="paper-img">
+              <img class="img" src="./images/icon-paper.svg" alt="paper" onclick="getUserChoice('paper')">
+          </div>
+
+          <div class="scissors-img">
+              <img class="img" src="./images/icon-scissors.svg" alt="scissors" onclick="getUserChoice('scissors')">
+          </div>
+        </div>
+
+          <div   class="rock-img">
+              <img class="img" src="./images/icon-rock.svg" alt="rock" onclick="getUserChoice('rock')">
+          </div>
+        </div>
+     </div>
+  </main>
+
+  <div class="choices">
+
+     <div class="user-pick">
+      <h2 class="my-pick-text">you picked</h2>
+          <div class="picked-img paper-img">
+            <img id="userChoiceImg" class="img" alt="user choice">
+        </div>
+      </div>
+
+
+    <div class="game-response">
+      <div class="response">
+        <h2 class="response-text">you win</h2>
+      </div>
+      <button class="play-again-btn" onclick="restartGame()">play again</button>
+    </div>
+
+ <!-- <div class="computer-pick">
+    <h2 class="computer-pick-text">the house picked</h2>
+      <div>
+        <div>
+          <img class="img">
+        </div>
+      </div>
+    </div> -->
+</div>
+
+  <footer class="btn-rules-position">
+    <button class="btn-rules" id="btn-rules">rules</button>
+
+        <div id="rules" class="rules">
+
+          <div>
+            <h2 class="rules-text">rules</h2>
+            <img src="./images/image-rules.svg" alt="game rules" class="rules-img">
+            <img src="./images/icon-close.svg" alt="close icon" class="close-rules">
+          </div>
+        </div>
+  </footer>
 </body>
+<script defer src="script.js"></script>
 </html>

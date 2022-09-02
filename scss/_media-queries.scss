@@ -1,0 +1,187 @@
+@media all and (min-width: 48rem) {
+
+    /*================
+         #Layout
+      ================
+    */
+
+    .container {
+        max-width: min(75%);
+    }
+
+    .triangle-bg {
+        width: 24rem;
+        height: 22rem;
+    }
+
+    .user-pick,
+    .computer-pick {
+        margin-top: 8rem;
+    }
+
+
+    /*================
+         #Components
+      ================
+    */
+
+    .paper-img,
+    .scissors-img,
+    .rock-img {
+        width: 4rem;
+        height: 6rem;
+    }
+
+    .paper-img {
+        transform: translate(-30%, -40%);
+    }
+
+    .scissors-img {
+        transform: translate(210%, -40%);
+    }
+
+    .rock-img {
+        transform: translate(130%, 110%);
+    }
+
+    .pc-picked-img {
+        transform: translate(220%, -30%);
+    }
+
+    .btn-rules-position {
+        justify-content: end;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+
+    .rules-img {
+        margin-left: 15rem;
+        margin-top: 7rem;
+     }
+
+     .close-rules {
+         margin-left: 24rem;
+     }
+
+     .user-pick {
+        grid-column: 1/1;
+     }
+
+     .computer-pick {
+        grid-column: 3/3;
+        transform: translate(-50%);
+     }
+
+     .game-response {
+        grid-column: 2/2;
+        grid-row: 1;
+        transform: translate(35%, -25%);
+     }
+
+    /*================
+         #Typography
+      ================
+    */
+
+     .my-pick-text {
+        transform: translate(-30%);
+     }
+
+     .computer-pick-text {
+        transform: translate(100%);
+    }
+
+}
+
+@media all and (min-width: 75rem) {
+
+    /*================
+         #Layout
+      ================
+    */
+
+    .container {
+        max-width: min(55%);
+    }
+
+    /*================
+         #Components
+      ================
+     */
+
+    .logo {
+        width: 8rem;
+        height: 6rem;
+        padding-top: 1rem;
+    }
+
+    .score-desktop-position {
+        margin-top: .3rem;
+    }
+
+    .score {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .rules {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        width: 27rem;
+        height: 26rem;
+        border-radius: 4px;
+    }
+
+    .rules-img {
+        width: fit-content;
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+     }
+
+     .close-rules {
+        margin-top: -21.7rem;
+     }
+
+     .computer-pick {
+        transform: translate(-40%);
+    }
+
+     /*================
+         #Typography
+      ================
+    */
+
+    .rules-text {
+        font-size: $font-size-1_5;
+        margin-top: 1rem;
+        margin-left: 1.7rem;
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 93.75rem) {
+
+     /*================
+         #Components
+       ================
+     */
+    .computer-pick {
+        transform: translate(-30%);
+     }
+
+    /*================
+         #Typography
+      ================
+    */
+
+    .my-pick-text,
+    .computer-pick-text {
+        font-size: $font-size-1_5;
+    }
+
+    .computer-pick-text {
+        transform: translate(50%);
+    }
+
+}

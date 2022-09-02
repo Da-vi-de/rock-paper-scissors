@@ -1,0 +1,40 @@
+.score-text {
+    font-size: $font-size-0_6;
+    color: $color-score-text;
+    text-transform: uppercase;
+    padding-top: .3rem;
+    font-weight: 700;
+}
+
+.score-track-text {
+    font-size: $font-size-2_5;
+    font-weight: 700;
+    color: $color-dark-text;
+}
+
+.rules-text {
+    margin-top: 6rem;
+    font-size: $font-size-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-dark-text;
+}
+
+.my-pick-text,
+.computer-pick-text {
+    margin-top: 4rem;
+    transform: translate(28%);
+    font-size: $font-size-0_8;
+    color: $color-white;
+    text-transform: uppercase;
+    order: 2;
+}
+
+.response-text{
+    margin-top: 3.8rem;
+    font-size: $font-size-1_5;
+    color: $color-white;
+    text-transform: uppercase;
+    transform: translate(-2%);
+}

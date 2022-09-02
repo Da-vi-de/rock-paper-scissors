@@ -1,0 +1,46 @@
+.container {
+    max-width: min(85%);
+    margin: 2rem auto;
+}
+
+.hero {
+    padding: 1rem;
+    border: 2px solid $color-header-outline;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.triangle-bg-container {
+    display: grid;
+    justify-content: center;
+}
+
+.triangle-bg {
+    background: url(../images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 6rem;
+    place-content: center;
+    width: 12rem;
+    height: 10rem;
+}
+
+.images-position {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.choices {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.user-pick,
+.computer-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
