@@ -14,9 +14,9 @@ closeRules.onclick = function () {
     rules.style.display = "none";
 };
 const choiceOption = {
-    "paper": "./images/icon-paper.svg",
-    "scissors": "./images/icon-scissors.svg",
-    "rock": "./images/icon-rock.svg"
+  "paper": "./images/paper_img.png",
+  "scissors": "./images/scissors_img.png",
+  "rock": "./images/rock_img.png"
 };
 // Hide the game response and "play again" button!
 function hideResponse() {
@@ -30,7 +30,9 @@ function getUserChoice(choice) {
     gameContainer.style.display = "none";
     choices.style.display = "grid";
     document.getElementById('userChoiceImg').src = choiceOption[choice];
-    getComputerChoice(choice);
+    setTimeout(() => {
+        getComputerChoice(choice);
+       }, 2000)
 }
 ;
 // The result function is called here in order to include the functionality,
@@ -40,7 +42,7 @@ function getComputerChoice(choice) {
     const computerChoice = options[Math.floor(Math.random() * options.length)];
     const markup = `
  <div class="computer-pick">
-    <h2 class="computer-pick-text">the house picked</h2>
+    <h2 class="computer-pick-text">house picked</h2>
     <div>
       <div class="pc-picked-img paper-img">
         <img class="img" src = ${choiceOption[computerChoice]} alt="computer choice">

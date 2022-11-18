@@ -28,24 +28,28 @@
     .paper-img,
     .scissors-img,
     .rock-img {
-        width: 4rem;
-        height: 6rem;
+        width: 20rem;
+        height: 20rem;
     }
 
     .paper-img {
-        transform: translate(-30%, -40%);
+        transform: translate(-40%, -50%);
     }
 
     .scissors-img {
-        transform: translate(210%, -40%);
+        transform: translate(-35%, -50%);
     }
 
     .rock-img {
-        transform: translate(130%, 110%);
+        transform: translate(-15%, -160%);
+    }
+
+    .picked-img {
+        transform: translate(-5%, -55%)
     }
 
     .pc-picked-img {
-        transform: translate(220%, -30%);
+        transform: translate(25%, -55%);
     }
 
     .btn-rules-position {
@@ -75,7 +79,7 @@
      .game-response {
         grid-column: 2/2;
         grid-row: 1;
-        transform: translate(35%, -25%);
+        transform: translate(40%, -25%);
      }
 
     /*================
@@ -85,10 +89,16 @@
 
      .my-pick-text {
         transform: translate(-30%);
+        font-size: $font-size-1_5;
      }
 
      .computer-pick-text {
-        transform: translate(100%);
+        transform: translate(50%, 20%);
+        font-size: $font-size-1_5;
+    }
+
+    .response-text {
+        -webkit-transform: translate(-50%);
     }
 
 }
@@ -144,8 +154,13 @@
      }
 
      .computer-pick {
-        transform: translate(-40%);
+        transform: translate(-20%);
     }
+
+
+    .game-response {
+        transform: translate(50%, -25%);
+     }
 
      /*================
          #Typography
@@ -158,30 +173,24 @@
         margin-left: 1.7rem;
         text-align: left;
     }
+
+    .response-text {
+        -webkit-transform: translate(-25%);
+    }
 }
 
 @media all and (min-width: 93.75rem) {
 
-     /*================
-         #Components
-       ================
-     */
     .computer-pick {
-        transform: translate(-30%);
-     }
+        transform: translate(-20%, 3%);
+    }
 
     /*================
          #Typography
       ================
     */
 
-    .my-pick-text,
-    .computer-pick-text {
-        font-size: $font-size-1_5;
+    .response-text {
+        -webkit-transform: translate(-20%);
     }
-
-    .computer-pick-text {
-        transform: translate(50%);
-    }
-
 }

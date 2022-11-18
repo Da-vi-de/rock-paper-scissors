@@ -23,8 +23,8 @@
 
 .my-pick-text,
 .computer-pick-text {
-    margin-top: 4rem;
-    transform: translate(28%);
+    transform: translate(-20%);
+    -moz-transform: translate(-50%);
     font-size: $font-size-0_8;
     color: $color-white;
     text-transform: uppercase;
@@ -32,9 +32,11 @@
 }
 
 .response-text{
-    margin-top: 3.8rem;
+    margin-bottom: .8rem;
     font-size: $font-size-1_5;
     color: $color-white;
     text-transform: uppercase;
-    transform: translate(-2%);
+    transform: translate(-90%);
+    -moz-transform: translate(-50%);
+    white-space: nowrap;
 }

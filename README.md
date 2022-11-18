@@ -54,6 +54,4 @@ Computer choice
    choices.insertAdjacentHTML('beforeend', markup);
 ```
 
-I wanted make the images look like real buttons, i did it and i was satisfied with the result, i practicied a bit of CSS art but the HTML was getting messy and everything i did was interfering with the functionality! I kept the code in components file though.
-
-In conclusion this project has been a great learning experience!
+In conclusion this project is not totally concluded i want to improve it, it's definetely a great learning experience!

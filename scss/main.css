@@ -178,9 +178,9 @@ select {
 
 .my-pick-text,
 .computer-pick-text {
-  margin-top: 4rem;
-  -webkit-transform: translate(28%);
-          transform: translate(28%);
+  -webkit-transform: translate(-20%);
+          transform: translate(-20%);
+  -moz-transform: translate(-50%);
   font-size: 0.8rem;
   color: white;
   text-transform: uppercase;
@@ -190,12 +190,14 @@ select {
 }
 
 .response-text {
-  margin-top: 3.8rem;
+  margin-bottom: .8rem;
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
-  -webkit-transform: translate(-2%);
-          transform: translate(-2%);
+  -webkit-transform: translate(-90%);
+          transform: translate(-90%);
+  -moz-transform: translate(-50%);
+  white-space: nowrap;
 }
 
 .logo {
@@ -213,17 +215,14 @@ select {
 }
 
 .img {
-  background-color: white;
-  padding: .5rem;
-  border-radius: 50%;
   cursor: pointer;
 }
 
 .paper-img,
 .scissors-img,
 .rock-img {
-  width: 3rem;
-  height: 3rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 .paper-img {
@@ -231,8 +230,8 @@ select {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  -webkit-transform: translate(-30%, -50%);
-          transform: translate(-30%, -50%);
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
 }
 
 .scissors-img {
@@ -240,16 +239,16 @@ select {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
-  -webkit-transform: translate(140%, -50%);
-          transform: translate(140%, -50%);
+  -webkit-transform: translate(-80%, -50%);
+          transform: translate(-80%, -50%);
 }
 
 .rock-img {
   -ms-grid-row: 2;
   grid-row: 2;
   margin-left: 5rem;
-  -webkit-transform: translate(-10%, 80%);
-          transform: translate(-10%, 80%);
+  -webkit-transform: translate(-45%, -200%);
+          transform: translate(-45%, -200%);
 }
 
 .btn-rules-position {
@@ -320,13 +319,14 @@ select {
 }
 
 .picked-img {
-  -webkit-transform: translate(10%, -70%);
-          transform: translate(10%, -70%);
+  -webkit-transform: translate(-10%, -20%);
+          transform: translate(-10%, -20%);
 }
 
 .pc-picked-img {
-  -webkit-transform: translate(90%, -70%);
-          transform: translate(90%, -70%);
+  -webkit-transform: translate(-5%, -20%);
+          transform: translate(-5%, -20%);
+  -moz-transform: translate(-20%, -20%);
 }
 
 .game-response {
@@ -350,8 +350,8 @@ select {
   color: #3b4363;
   border: 2px solid transparent;
   border-radius: 4px;
-  -webkit-transform: translate(-24%);
-          transform: translate(-24%);
+  -webkit-transform: translate(-70%);
+          transform: translate(-70%);
 }
 
 .play-again-btn:hover {
@@ -366,6 +366,8 @@ select {
   position: relative;
   width: 5rem;
   height: 5rem;
+  top: -15%;
+  left: -17%;
   background-color: $color-white;
   border-radius: 50%;
   display: grid;
@@ -377,8 +379,7 @@ select {
   &::before {
     content: "";
     position: absolute;
-    top: -15%;
-    left: -17%;
+
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -391,7 +392,7 @@ select {
     color: $color-paper;
 
     &::before {
-        box-shadow:  0 5px 1px hsl(230, 89%, 62%);;
+        box-shadow:  0 5px 1px hsl(230, 89%, 62%);
     }
 }
 
@@ -399,7 +400,7 @@ select {
     color: $color-scissors;
 
     &::before {
-        box-shadow:  0 5px 1px hsl(39, 89%, 49%) ;
+        box-shadow:  0 5px 1px hsl(39, 89%, 49%);
     }
 }
 
@@ -409,6 +410,28 @@ select {
     &::before {
         box-shadow:  0 5px 1px hsl(349, 71%, 52%);
     }
+}
+
+.circle {
+    border: 1rem solid;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+.circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: -5px;
+    box-shadow: 0 -10px 0 5px lightgrey;;
+    background-color:white;
 }
 */
 @media all and (min-width: 48rem) {
@@ -434,24 +457,28 @@ select {
   .paper-img,
   .scissors-img,
   .rock-img {
-    width: 4rem;
-    height: 6rem;
+    width: 20rem;
+    height: 20rem;
   }
   .paper-img {
-    -webkit-transform: translate(-30%, -40%);
-            transform: translate(-30%, -40%);
+    -webkit-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%);
   }
   .scissors-img {
-    -webkit-transform: translate(210%, -40%);
-            transform: translate(210%, -40%);
+    -webkit-transform: translate(-35%, -50%);
+            transform: translate(-35%, -50%);
   }
   .rock-img {
-    -webkit-transform: translate(130%, 110%);
-            transform: translate(130%, 110%);
+    -webkit-transform: translate(-15%, -160%);
+            transform: translate(-15%, -160%);
+  }
+  .picked-img {
+    -webkit-transform: translate(-5%, -55%);
+            transform: translate(-5%, -55%);
   }
   .pc-picked-img {
-    -webkit-transform: translate(220%, -30%);
-            transform: translate(220%, -30%);
+    -webkit-transform: translate(25%, -55%);
+            transform: translate(25%, -55%);
   }
   .btn-rules-position {
     -webkit-box-pack: end;
@@ -482,8 +509,8 @@ select {
     grid-column: 2/2;
     -ms-grid-row: 1;
     grid-row: 1;
-    -webkit-transform: translate(35%, -25%);
-            transform: translate(35%, -25%);
+    -webkit-transform: translate(40%, -25%);
+            transform: translate(40%, -25%);
   }
   /*================
          #Typography
@@ -492,10 +519,15 @@ select {
   .my-pick-text {
     -webkit-transform: translate(-30%);
             transform: translate(-30%);
+    font-size: 1.5rem;
   }
   .computer-pick-text {
-    -webkit-transform: translate(100%);
-            transform: translate(100%);
+    -webkit-transform: translate(50%, 20%);
+            transform: translate(50%, 20%);
+    font-size: 1.5rem;
+  }
+  .response-text {
+    -webkit-transform: translate(-50%);
   }
 }
 
@@ -542,8 +574,12 @@ select {
     margin-top: -21.7rem;
   }
   .computer-pick {
-    -webkit-transform: translate(-40%);
-            transform: translate(-40%);
+    -webkit-transform: translate(-20%);
+            transform: translate(-20%);
+  }
+  .game-response {
+    -webkit-transform: translate(50%, -25%);
+            transform: translate(50%, -25%);
   }
   /*================
          #Typography
@@ -555,28 +591,22 @@ select {
     margin-left: 1.7rem;
     text-align: left;
   }
+  .response-text {
+    -webkit-transform: translate(-25%);
+  }
 }
 
 @media all and (min-width: 93.75rem) {
-  /*================
-         #Components
-       ================
-     */
   .computer-pick {
-    -webkit-transform: translate(-30%);
-            transform: translate(-30%);
+    -webkit-transform: translate(-20%, 3%);
+            transform: translate(-20%, 3%);
   }
   /*================
          #Typography
       ================
     */
-  .my-pick-text,
-  .computer-pick-text {
-    font-size: 1.5rem;
-  }
-  .computer-pick-text {
-    -webkit-transform: translate(50%);
-            transform: translate(50%);
+  .response-text {
+    -webkit-transform: translate(-20%);
   }
 }
 /*# sourceMappingURL=main.css.map */
